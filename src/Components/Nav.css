@@ -1,0 +1,135 @@
+/* nav */
+
+
+
+.navHolder{
+    /* background-color: rgb(93, 22, 151); */
+    display: flex;
+    justify-content: center;
+    position: relative;
+     z-index: 1;
+}
+
+.navbarContainer{
+    /* background-color: var(--bodyBackgroundColor); */
+}
+
+.navbar{
+    width: 97vw;
+    height: 53px;
+    margin-block: 20px 0px;
+    background-color: rgb(102, 236, 174);
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* menu */
+
+.menuContainer{
+    width: 45px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0px 45px 0px 10px;
+}
+
+.menuContainer:hover{
+    background-color: rgba(93, 214, 158, 0.932);
+    transition: 0s;
+}
+
+.menuContainer:active{
+    background-color: rgb(255, 255, 255);
+    transition: 0s;
+}
+
+#menu{
+    height: 25px;
+    width: 25px;
+    display: block;
+    /* icons8-delete-24.png */
+    transition: 1s;
+}
+
+.menuIcon1{
+    background-image: url("./icons/Menu.png");
+}
+
+.menuIcon2{
+    background-image: url("./icons/Delete.png");
+}
+
+
+/* logo */
+
+.logo{
+    display: flex ;
+    margin-inline: 10px;
+    user-select: none;
+}
+
+#sunsetLogo{
+    height: 50px;
+    width: 60px;
+    margin-top: 10px;
+    /* position: absolute; */
+    display: block;
+    background-image: url("./icons/icons8-sunset-64.png");
+
+}
+
+.navbarContainer h1 {
+    color: white;
+    margin-inline: 10px;
+    text-shadow: 2px 2px 1px rgb(78, 76, 76);
+}
+
+/* search */
+
+.searchContainer{
+    width: auto;
+    margin-inline: 5px;
+}
+
+input[type="text"]{
+    font-size: 1em;
+    border:none;
+    padding:10px;
+    border-radius: 10px 0 0 10px;
+    outline: 0;
+    margin-inline: 2px;
+}
+
+input[type="text"]:focus{
+    box-shadow: inset 0px 0px 3px rgb(139, 139, 139) ;
+}
+
+input[type="submit"]{
+    font-size: 1em;
+    border:0;
+    padding:10px;
+    border-radius: 0 10px 10px 0;
+    cursor:pointer;
+    margin-inline: 2px;
+}
+
+input[type="submit"]:active{
+    background-color: rgb(92, 216, 92);
+}
+
+@media only screen and (max-width: 600px) {
+    .searchContainer{
+        width: auto;
+        margin-inline: 5px;
+
+        
+    }
+}

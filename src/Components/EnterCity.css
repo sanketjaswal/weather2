@@ -1,0 +1,104 @@
+.enterCity {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgba(167, 167, 167, 0.568); */
+  /* filter: blur(10px); */
+  background-image: url("images/cloudBackgound.png");
+  /* background-position: center; */
+  background-repeat: repeat;
+  background-size:75vh;
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  transform: scale(10);
+}
+
+.cityPopup {
+  width: 25vw;
+  /* height: 20vh; */
+  height: auto;
+  padding-block: 3vh;
+  background-color: rgba(255, 255, 255, 0.612);
+  border-radius: 50px;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  position: relative;
+  margin-block: 28vh;
+  box-shadow: inset 0 0 10px transparent;
+}
+
+.nameBtn {
+  display: flex;
+  /* background-color: aqua; */
+  justify-content: space-evenly;
+}
+
+#cityName {
+  /* background-color: blueviolet; */
+  border-radius: 20px;
+  width: 60%;
+  text-align: center;
+  color: grey;
+  font-size: 20px;
+  border: none;
+  box-shadow: inset 0 0 5px grey;
+  
+}
+
+#cityName:focus {
+  box-shadow: inset 0 0 7px rgb(18, 179, 18);
+}
+
+.cityPopup button {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  border: none;
+  background-color: greenyellow;
+  color: white;
+  transition: 0.5s;
+  /* display: none; */
+}
+
+.cityPopup:hover{
+    /* display: flex; */
+}
+
+.cityPopup button i {
+  font-size: 35px;
+}
+
+button:hover {
+  background-color: white;
+  color: greenyellow;
+  transition: 0.5s;
+}
+
+button:active {
+  transition: 0.3s;
+  color: gold;
+  background-color: white;
+}
+
+.crossBtn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 22px;
+  color:white;
+  transform:scale(0);
+    transition: .4s;
+}
+
+.crossBtn:hover{
+  color: rgb(252, 101, 26);
+}
+
+.cityPopup:hover > .crossBtn {
+  transform:scale(1);
+  transition: .2s;
+}

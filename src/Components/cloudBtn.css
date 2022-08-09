@@ -1,0 +1,90 @@
+.cloudBtnContainer {
+  background-color: red;
+  position: absolute;
+  width: auto;
+  height: auto;
+  bottom: 10pc;
+  right: 17pc;
+}
+
+.cldBtnSun {
+  background-color: gold;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: absolute;
+  top: -60px;
+  left: 60px;
+  transition: 0.5s;
+  transform: scale(1);
+}
+
+.cldBtnBase {
+  width: 145px;
+  height: 55px;
+  background-color: var(--cloudBtnColor);
+  border-radius: 00px 40px 25px 0px;
+  position: absolute;
+  box-shadow: 1px 1px 2px rgb(48, 114, 141);
+}
+
+.cldBtnLeft {
+  background-color: var(--cloudBtnColor);
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  left: -40px;
+  box-shadow: -1px 1px 3px rgb(48, 114, 141);
+}
+
+.cldBtnTop {
+  background-color: var(--cloudBtnColor);
+  width: 120px;
+  height: 115px;
+  border-radius: 50%;
+  position: absolute;
+  top: -70px;
+  left: -10px;
+}
+
+.cldBtnIconHolder {
+  position: absolute;
+  font-size: 30px;
+  color: rgb(0, 179, 255);
+  top: -20px;
+  left: 20px;
+  transition: 0.5s;
+  --fa-animation-duration: 2.5s;
+  --fa-beat-scale: 1.3;
+}
+
+/* .cloudBtnContainer:hover {} */
+
+.cloudBtnContainer:hover > .cldBtnIconHolder {
+  transition: 0.5s;
+  color: gold;
+  transform: rotate(90deg);
+}
+
+.cloudBtnContainer:hover > .cldBtnSun {
+  top: -120px;
+  left: 80px;
+  transition: 0.5s;
+}
+
+.cloudBtnContainer:active {
+  transition: 0.1s;
+}
+
+.cloudBtnContainer:active > .cldBtnIconHolder {
+  transition: 0.5s;
+  opacity: 0;
+  color: green;
+}
+
+.cloudBtnContainer:active > .cldBtnSun {
+  opacity: 0;
+  transform: scale(0);
+}

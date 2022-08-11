@@ -45,7 +45,7 @@ export const WeatherMoreInfo = ({
     videoss = OvercastClouds;
   } else if (weatherExplain === "drizzle") {
     videoss = Drizzle;
-  } else if (weatherExplain === "rain") {
+  } else if (weatherExplain === "rain" || weatherExplain === "light rain") {
     videoss = Rain;
   } else if (weatherExplain === "snow") {
     videoss = Drizzle;

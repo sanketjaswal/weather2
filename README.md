@@ -6,7 +6,7 @@ The weather app provides weather conditions, precipitation ,temperature in diffe
 #### link to appliction
 
 ```js
-https://sanketjaswal.github.io/weather2/;
+https://sanketjaswal.github.io/weather2/
 ```
 
 ### Packages

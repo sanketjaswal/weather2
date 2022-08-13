@@ -88,3 +88,65 @@
   opacity: 0;
   transform: scale(0);
 }
+
+@media only screen and (max-width: 600px) {
+  .cloudBtnContainer {
+    bottom: 4pc;
+    right: 8pc;
+  }
+
+  .cldBtnSun {
+    width: 50px;
+    height: 50px;
+    top: -40px;
+    left: 40px;
+  }
+
+  .cldBtnBase {
+    width: 85px;
+    height: 35px;
+    box-shadow: 2px 2px 2px rgb(48, 114, 141);
+  }
+
+  .cldBtnLeft {
+    width: 50px;
+    height: 50px;
+    top: -15px;
+    left: -23px;
+    box-shadow: -2px 2px 3px rgb(48, 114, 141);
+  }
+
+  .cldBtnTop {
+    /* background-color: blue; */
+    width: 65px;
+    height: 65px;
+    top: -40px;
+    left: -1px;
+  }
+
+  .cldBtnIconHolder {
+    font-size: 17px;
+    color: gold;
+    top: -10px;
+    left: 13px;
+    transition: 0.5s;
+    --fa-animation-duration: 1.5s;
+    --fa-beat-scale: 1.6;
+  }
+
+  /* .cloudBtnContainer:hover {} */
+
+  .cloudBtnContainer:hover > .cldBtnSun {
+     top: -40px;
+    left: 40px;
+    transition: 0.5s;
+  }
+
+  .cloudBtnContainer:active {
+    --cloudBtnColor: rgb(240, 240, 240);
+    bottom: 3.8pc;
+  }
+
+
+
+}

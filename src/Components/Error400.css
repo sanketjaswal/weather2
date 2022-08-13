@@ -71,3 +71,22 @@
   transition: 0.1s;
   color: gold;
 }
+
+@media only screen and (max-width: 600px) {
+  
+.popup400Container {
+  width: 75vw;
+}
+
+.popup400Container button {
+  bottom: -35px;
+  right:6.5pc; 
+  transition: 0.1s;
+}
+
+.popup400Container button:hover {
+  bottom: -35px;
+  right: 6.5pc;
+}
+
+}

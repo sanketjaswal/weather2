@@ -73,3 +73,22 @@ justify-content: space-evenly;
   transition: 0.1s;
   color: gold;
 }
+
+@media only screen and (max-width: 600px) {
+  
+.popupEPContainer {
+  width: 80vw;
+}
+
+.popupEPContainer button {
+  bottom: -35px;
+  right:7pc; 
+  transition: 0.1s;
+}
+
+.popupEPContainer button:hover {
+  bottom: -35px;
+  right: 7pc;
+}
+
+}

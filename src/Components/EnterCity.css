@@ -1,12 +1,9 @@
 .enterCity {
   width: 100vw;
   height: 100vh;
-  /* background-color: rgba(167, 167, 167, 0.568); */
-  /* filter: blur(10px); */
   background-image: url("images/cloudBackgound.png");
-  /* background-position: center; */
   background-repeat: repeat;
-  background-size:75vh;
+  background-size: 75vh;
   z-index: -1;
   opacity: 0;
   position: absolute;
@@ -19,7 +16,6 @@
 
 .cityPopup {
   width: 25vw;
-  /* height: 20vh; */
   height: auto;
   padding-block: 3vh;
   background-color: rgba(255, 255, 255, 0.612);
@@ -33,12 +29,10 @@
 
 .nameBtn {
   display: flex;
-  /* background-color: aqua; */
   justify-content: space-evenly;
 }
 
 #cityName {
-  /* background-color: blueviolet; */
   border-radius: 20px;
   width: 60%;
   text-align: center;
@@ -46,7 +40,6 @@
   font-size: 20px;
   border: none;
   box-shadow: inset 0 0 5px grey;
-  
 }
 
 #cityName:focus {
@@ -61,11 +54,6 @@
   background-color: greenyellow;
   color: white;
   transition: 0.5s;
-  /* display: none; */
-}
-
-.cityPopup:hover{
-    /* display: flex; */
 }
 
 .cityPopup button i {
@@ -89,16 +77,47 @@ button:active {
   top: 0;
   right: 10px;
   font-size: 22px;
-  color:white;
-  transform:scale(0);
-    transition: .4s;
+  color: white;
+  transform: scale(0);
+  transition: 0.4s;
 }
 
-.crossBtn:hover{
+.crossBtn:hover {
   color: rgb(252, 101, 26);
 }
 
 .cityPopup:hover > .crossBtn {
-  transform:scale(1);
-  transition: .2s;
+  transform: scale(1);
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 600px) {
+  .cityPopup {
+    width: 85vw;
+    padding-block: 3vh;
+    box-shadow: 0 0 5px grey;
+  }
+
+  .crossBtn {
+    top: 10pc;
+    right: 8.5pc;
+    font-size: 40px;
+    background-color: rgb(252, 101, 26);
+    padding: 4px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    transform: scale(1);
+    transition: 0s;
+    box-shadow: 0 0 5px rgb(82, 82, 82);
+  }
+
+  .crossBtn:active {
+    color: rgb(252, 101, 26);
+    background-color: white;
+    transition: 0s;
+    top: 10.1pc;
+    right: 8.6pc;
+    font-size: 37px;
+    box-shadow: 0 0 2px rgb(105, 105, 105);
+  }
 }

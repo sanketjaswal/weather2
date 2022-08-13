@@ -1,7 +1,6 @@
 :root {
   --note-icon-size: 32px;
   --city-name-bgcolor: rgba(102, 236, 173, 0.986);
-  /* --city-name-bgcolor: white; */
 }
 
 .slotCover {
@@ -10,7 +9,6 @@
   margin: 35px 70px;
   position: relative;
   user-select: none;
-  /* background-color: aqua; */
 }
 
 .weatherSlotContainer {
@@ -19,7 +17,6 @@
   height: 180px;
   background-color: rgba(125, 125, 125, 0.586);
   box-shadow: 0px 0px 71px grey;
-  /* background-clip: url("videos/cloudLoop.mp4"); */
   border-radius: 5%;
   flex-wrap: wrap;
   transition: 0.4s;
@@ -44,7 +41,6 @@
   --city-name-bgcolor: gold;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 10px lightblue;
-  /* overflow: visible; */
 }
 
 .weatherSlotContainer:hover .cityNameContainer {
@@ -100,11 +96,10 @@
 .weatherIconContainer {
   width: auto;
   display: block;
-    position: absolute;
-     top: -20px;
+  position: absolute;
+  top: -20px;
   right: -170px;
   z-index: 1;
-
 }
 
 .weatherIcon {
@@ -113,7 +108,6 @@
   box-shadow: 0px 0px 10px rgb(156, 156, 156);
   border-radius: 100%;
   position: relative;
-  
   transition: 0.2s;
 }
 
@@ -123,11 +117,10 @@
   position: absolute;
   width: 100px;
   height: 100px;
-  /* border-radius: 100%; */
 }
 
-.slotCover:hover .weatherIcon{
-    width: 43%;
+.slotCover:hover .weatherIcon {
+  width: 43%;
   transition: 0.2s;
   background-color: rgb(143, 216, 238);
   box-shadow: 0px 0px 10px lightblue;
@@ -136,7 +129,6 @@
 /* text */
 
 .slotBaseHolder {
-  /* background-color: rgba(0, 0, 255, 0.53); */
   width: 103%;
   height: 32%;
   position: absolute;
@@ -148,8 +140,6 @@
 
 .cityHolder {
   z-index: 1;
-  /* position: absolute;
-  right: 0; */
 }
 
 .slotAngledDiv {
@@ -160,17 +150,14 @@
   left: -32px;
   top: 18.5px;
   background-color: var(--city-name-bgcolor);
-  /* z-index: 0; */
 }
 
 .slotBaseDiv {
   width: 100%;
   height: 10px;
   position: absolute;
-  /* left: -32px; */
   bottom: 0px;
   background-color: var(--city-name-bgcolor);
-  /* background-color: blueviolet; */
 }
 
 .cityNameContainer {
@@ -185,8 +172,6 @@
   position: absolute;
   right: 0px;
   top: 0px;
-
-  /* border-radius: 7px 10px 0 0; */
   font-family: "Oswald", sans-serif;
   font-size: large;
 }
@@ -197,8 +182,6 @@
 
 .countryContainer {
   width: 35px;
-  /* height: 10px; */
-  /* padding-inline: 5px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,7 +196,6 @@
 .weatherContainer {
   width: fit-content;
   height: 30px;
-  /* background-color: lightcoral; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -222,8 +204,6 @@
   top: 48%;
   overflow: hidden;
   transition: 0.5s;
-  /* font-family: 'Oswald', sans-serif; */
-  /* font-size:large; */
 }
 
 .weatherContainer p {
@@ -233,7 +213,6 @@
 
 .weatherContainer p:nth-child(1) {
   font-size: 20px;
-  /* padding-left: 20px; */
 }
 
 .weatherContainer p:nth-child(2) {
@@ -249,17 +228,13 @@
 .tempContainer {
   width: min-content;
   height: 100%;
-  /* background-color: rgb(102, 102, 102); */
   position: absolute;
-  /* padding: 5px 10px; */
-  /* bottom: 20%; */
   left: 20px;
   top: 0px;
   display: flex;
   justify-content: center;
   align-content: center;
   user-select: none;
-  /* z-index: 3; */
   text-shadow: 0px 0px 5px rgb(199, 199, 199);
 }
 
@@ -272,7 +247,6 @@
 
 .tempContainer p:nth-child(1) {
   font-size: 85px;
-  /* background-color: aqua; */
   display: flex;
   justify-items: center;
   align-items: center;
@@ -281,9 +255,7 @@
 .tempContainer p:nth-child(2) {
   font-size: 15px;
   padding-top: 35%;
-  /* background-color: aqua; */
-    font-style: italic;
-
+  font-style: italic;
 }
 
 .tempContainer p:nth-child(3) {
@@ -337,10 +309,6 @@ h5 {
   transform: scale(0.8);
 }
 
-/* .hiddenSlot:hover .note_icon:not(:active) {
-  transform: scale(0.8);
-} */
-
 .trash_icon {
   top: 15px;
   left: -15px;
@@ -358,11 +326,6 @@ h5 {
   bottom: -10px;
   left: 87px;
 }
-
-/* .hiddenSlot .hide_icon {
-  bottom: -30px;
-  left: -25px;
-} */
 
 .hide_icon:active {
   background-color: rgb(0, 119, 255);
@@ -390,17 +353,7 @@ h5 {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .weatherSlotContainer {
-    position: relative;
-    width: 90%;
-    height: 140px;
-    background-color: rgb(235, 235, 235);
-    margin: 35px 45px;
-  }
-}
-
-/* // ghghgh////// */
+/* Video */
 
 .video-container {
   height: 100%;
@@ -412,9 +365,18 @@ h5 {
 .video-container video {
   width: 100%;
   height: 100%;
-  /* position: absolute; */
   object-fit: cover;
   z-index: 0;
-    /* playbackRate: -1; */
+}
 
+
+@media only screen and (max-width: 600px) {
+  .slotCover {
+    /* background-color: blueviolet; */
+  width: auto;
+  height: auto;
+  /* margin: 35px 70px; */
+  position: relative;
+  user-select: none;
+}
 }

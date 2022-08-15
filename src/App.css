@@ -3,7 +3,7 @@
 }
 
 /* body{ */
-  /* overflow: hidden; */
+/* overflow: hidden; */
 /* } */
 
 .App {
@@ -21,7 +21,14 @@
   background-size: contain;
   position: fixed;
   /* filter: contrast(100%); */
+}
 
+.logoLeft {
+  display: none;
+}
+
+.logoRight {
+  display: none;
 }
 
 .weatherLogoContainer {
@@ -111,21 +118,63 @@
   /* z-index: -2; */
 }
 
-.moreInfoArea{
-   width: 100vw;
+.moreInfoArea {
+  width: 100vw;
   height: 100vh;
   z-index: -2;
-  top:0%;  
+  top: 0%;
   /* background-color: rgba(238, 14, 14, 0.721); */
   position: absolute;
   opacity: 0;
   transform: scale(2);
-  transition: .5s;
+  transition: 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
+  .bgImage {
+    background-image: url("cloudBgResponsive.png");
+  }
 
+  .page {
+    position: relative;
+  }
+
+  .weatherLogoContainer {
+    background-color: white;
+    margin-top: 0px;
+    padding: 0px 0px;
+    border-radius: 0 0 10px 10px;
+    color: rgb(98, 255, 0);
+    z-index: 1;
+    box-shadow: 0px 0px 0px 0px black;
+  }
+
+  .logoLeft {
+    display: block;
+    width: 20%;
+    height: 20%;
+    background-color: white;
+    position: absolute;
+    transform: rotate(70deg);
+    z-index: 0;
+    top: -15px;
+    left: 36px;
+    box-shadow: 0 0 5px black;
+  }
+
+  .logoRight {
+    display: block;
+    width: 20%;
+    height: 20%;
+    background-color: white;
+    position: absolute;
+    transform: rotate(-70deg);
+    z-index: 0;
+    top: -15px;
+    right: 36px;
+    box-shadow: 0 0 5px black;
+  }
 }

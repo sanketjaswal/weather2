@@ -216,6 +216,9 @@ function App() {
             <i className="fa-solid fa-cloud-sun weatherLogoIcon"></i>
             <p className="weatherLogoText">Weather Plus</p>
           </div>
+          <div className="logoLeft"></div>
+          <div className="logoRight"></div>
+
           <CloudBtn />
 
           <div className="slotArea">

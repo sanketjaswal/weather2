@@ -212,13 +212,15 @@ function App() {
         <Error400 />
         <EnterCity onSearch={onSearch} />
         <div className="page">
-          <div className="weatherLogoContainer">
-            <i className="fa-solid fa-cloud-sun weatherLogoIcon"></i>
-            <p className="weatherLogoText">Weather Plus</p>
+          <div className="logoHolder">
+            <div className="weatherLogoContainer">
+              <div className="logoRight"></div>
+              <div className="logoLeft"></div>
+              <div className="logoMiddle"></div>
+              <i className="fa-solid fa-cloud-sun weatherLogoIcon"></i>
+              <p className="weatherLogoText">Weather Plus</p>
+            </div>
           </div>
-          <div className="logoLeft"></div>
-          <div className="logoRight"></div>
-
           <CloudBtn />
 
           <div className="slotArea">

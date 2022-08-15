@@ -91,7 +91,7 @@
 
 @media only screen and (max-width: 600px) {
   .cloudBtnContainer {
-    bottom: -20pc;
+    bottom: 10pc;
     right: 8pc;
   }
 
@@ -144,7 +144,7 @@
 
   .cloudBtnContainer:active {
     --cloudBtnColor: rgb(240, 240, 240);
-    bottom: -20.2pc;
+    bottom: 3.8pc;
   }
 
 
